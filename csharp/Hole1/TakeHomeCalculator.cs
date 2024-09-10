@@ -39,10 +39,8 @@ namespace Hole1
             {
                 return new Pair<int, String>(total.first - tax.first, first.second);
             }
-            else
-            {
-                throw new Incalculable();
-            }
+
+            throw new Incalculable();
         }
     }
 }
