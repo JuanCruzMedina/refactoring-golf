@@ -21,7 +21,7 @@ namespace Hole1
 
             foreach (Pair<int, String> next in pairs)
             {
-                if (next.second != total.second)
+                if (!next.second.Equals(total.second))
                 {
                     throw new Incalculable();
                 }
@@ -35,7 +35,7 @@ namespace Hole1
             Double amount = total.first * (percent / 100d);
             Pair<int, String> tax = new Pair<int, String>(Convert.ToInt32(amount), first.second);
 
-            if (total.second == tax.second)
+            if (total.second.Equals(tax.second))
             {
                 return new Pair<int, String>(total.first - tax.first, first.second);
             }
