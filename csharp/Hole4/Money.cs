@@ -7,10 +7,15 @@ namespace Hole4
         public readonly int value;
         public readonly String currency;
 
-        public Money(int value, String currency)
+        private Money(int value, String currency)
         {
             this.value = value;
             this.currency = currency;
+        }
+
+        public static Money CreateInstance(int value, string currency)
+        {
+            return new Money(value, currency);
         }
 
         public Money Plus(Money other)
@@ -20,7 +25,7 @@ namespace Hole4
                 throw new Incalculable();
             }
 
-            return new Money(value + other.value, other.currency);
+            return CreateInstance(value + other.value, other.currency);
         }
     }
 }
