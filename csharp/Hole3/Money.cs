@@ -21,8 +21,7 @@ namespace Hole3
                 throw new Incalculable();
             }
 
-            total = new Money(total.value + next.value, next.currency);
-            return total;
+            return new Money(total.value + next.value, next.currency);
         }
     }
 }
