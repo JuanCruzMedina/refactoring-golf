@@ -7,8 +7,8 @@
 
         public Money(int value, string currency)
         {
-            this.Value = value;
-            this.Currency = currency;
+            Value = value;
+            Currency = currency;
         }
     }
 }
