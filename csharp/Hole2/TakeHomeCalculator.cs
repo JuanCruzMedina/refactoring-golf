@@ -21,7 +21,7 @@ namespace Hole2
 
             foreach (Money<int, String> next in pairs)
             {
-                if (!next.second.Equals(total.second))
+                if (!next.Currency.Equals(total.Currency))
                 {
                     throw new Incalculable();
                 }
@@ -29,18 +29,18 @@ namespace Hole2
 
             foreach (Money<int, String> next in pairs)
             {
-                total = new Money<int, String>(total.first + next.first, next.second);
+                total = new Money<int, String>(total.Value + next.Value, next.Currency);
             }
 
-            Double amount = total.first * (percent / 100d);
-            Money<int, String> tax = new Money<int, String>(Convert.ToInt32(amount), first.second);
+            Double amount = total.Value * (percent / 100d);
+            Money<int, String> tax = new Money<int, String>(Convert.ToInt32(amount), first.Currency);
 
-            if (!total.second.Equals(tax.second))
+            if (!total.Currency.Equals(tax.Currency))
             {
                 throw new Incalculable();
             }
 
-            return new Money<int, String>(total.first - tax.first, first.second);
+            return new Money<int, String>(total.Value - tax.Value, first.Currency);
         }
     }
 }

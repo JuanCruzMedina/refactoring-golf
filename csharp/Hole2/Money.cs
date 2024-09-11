@@ -2,13 +2,13 @@
 {
     public class Money<A, B>
     {
-        public readonly int first;
-        public readonly string second;
+        public readonly int Value;
+        public readonly string Currency;
 
         public Money(int value, string currency)
         {
-            this.first = value;
-            this.second = currency;
+            this.Value = value;
+            this.Currency = currency;
         }
     }
 }
