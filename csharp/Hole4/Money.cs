@@ -13,7 +13,7 @@ namespace Hole4
             this.currency = currency;
         }
 
-        public static Money CreateInstance(int value, string currency)
+        public static Money Create(int value, string currency)
         {
             return new Money(value, currency);
         }
@@ -25,7 +25,7 @@ namespace Hole4
                 throw new Incalculable();
             }
 
-            return CreateInstance(value + other.value, other.currency);
+            return Create(value + other.value, other.currency);
         }
     }
 }
