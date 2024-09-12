@@ -24,10 +24,15 @@ namespace Hole5
                 total = total.Plus(next);
             }
 
+            var tax = Apply(total);
+            return total.Minus(tax);
+        }
+
+        private Money Apply(Money total)
+        {
             Double amount = total.value * (percent / 100d);
             Money tax = Money.Create(Convert.ToInt32(amount), total.currency);
-
-            return total.Minus(tax);
+            return tax;
         }
     }
 }
