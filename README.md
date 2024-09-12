@@ -38,6 +38,7 @@ These are the best known scores, achieved using IntelliJ:
 | 6    | 7          | 4     |
  
 <b>Course Record: 38</b>
+
 <b>My Record: 40</b>
 
 ## Acknowledgements:
