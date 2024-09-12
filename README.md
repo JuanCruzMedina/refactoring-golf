@@ -30,16 +30,18 @@ These are the best known scores, achieved using IntelliJ:
 
 | Hole | Best score | Notes |
 |------|------------|-------|
-| 1    | 3          |       |
-| 2    | 7          |       |
-| 3    | 5          |       |
-| 4    | 6          |       |
-| 5    | 10         |       |
-| 6    | 7          |       |
+| 1    | 3          | 3     |
+| 2    | 7          | 9     |
+| 3    | 5          | 7     |
+| 4    | 6          | 8     |
+| 5    | 10         | 9     |
+| 6    | 7          | 4     |
  
 <b>Course Record: 38</b>
+<b>My Record: 40</b>
 
 ## Acknowledgements:
+This is an exercise suggested in Exeal's refactoring course.
 This exercise was developed with Ivan (@s4nchez). :)
 Thanks to @ivanmoore and @rchatley for the inspiration.
 These instructions were mostly stolen from @jasongorman's <a href="https://github.com/jasongorman/RefactoringGolfJava">Refactoring Golf repo</a>
