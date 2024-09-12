@@ -37,7 +37,7 @@ namespace Hole4
                 throw new Incalculable();
             }
 
-            return Money.Create(total.value - tax.value, first.currency);
+            return Money.Create(total.value - tax.value, total.currency);
         }
     }
 }
